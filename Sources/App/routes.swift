@@ -8,4 +8,8 @@ public func routes(_ router: Router) throws {
     router.get("name") { req in
         return "Ethan Hunt"
     }
+    
+    router.get("age") { req in
+        return 23
+    }
 }

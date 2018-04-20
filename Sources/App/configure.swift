@@ -14,4 +14,7 @@ public func configure(
     let router = EngineRouter.default()
     try routes(router)
     services.register(router, as: Router.self)
+    
+    let myService = EngineServerConfig.default(port: 8001)
+    services.register(myService)
 }
